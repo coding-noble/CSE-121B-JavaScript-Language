@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="scripts/main.js" defer></script>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Disney Finder</h1>
+    <p>This is my Disney Finder which allows you to search through the Disney character API and specify what kind of
+        output you would like to see in the grid below.</p>
+
+    <select id="sort-by">
+        <option id="orig-selector" value="orig">Original</option>
+        <option value="ascending">Name Ascending</option>
+        <option value="descending">Name Descending</option>
+        <option value="by-movie">Sort by Movie</option>
+    </select>
+
+    <button id="clear">Clear Results</button>
+
+    <button id="decrease">Decrease Count</button>
+    <button id="increase">Increase Count</button>
+    <button id="maxed" title="Can take a while to load all the information">Max Count</button>
+
+    <h3>Showing <span id="char-count"></span> Characters</h3>
+
+    <div id="character_grid"></div>
+</body>
+
+</html>
